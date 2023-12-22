@@ -16,6 +16,7 @@ class AttendanceImport implements ToModel
     {
         // Process and store attendance data
         return new Attendence([
+            'employee_id'=>'1',
             'name'     => $row[0],
             'check_in'    => $row[1],
             'check_out'    => $row[2],

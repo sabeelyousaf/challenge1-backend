@@ -19,6 +19,7 @@ class Attendence extends Model
         return $this->belongsTo(Schedule::class,'schedule_id','id');
     }
     protected $fillable = [
+        'employee_id',
         'name',
         'check_in',
         'check_out',
